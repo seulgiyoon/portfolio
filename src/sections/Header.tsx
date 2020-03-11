@@ -17,7 +17,7 @@ function Header() {
           />
         </button>
         <a
-          href="https://drive.google.com/file/d/10vW2lULVXcQXajK9N1i4tykCbFE0Y75G/view?usp=sharing"
+          href="https://drive.google.com/file/d/1f48OHvRkZok9frxKSVM-WW_jMDTZEXJf/view?usp=sharing"
           id="show-cv"
           target="_blank"
           rel="noopener noreferrer"

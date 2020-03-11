@@ -99,11 +99,6 @@ const projects: Project[] = [
         text: '질문글에 답변을 작성하는 과정을 보여주는 gif 이미지',
       },
       {
-        url: '/img/02-3ideas/04_select_answers.gif',
-        title: '마음에 드는 답변 선택하기',
-        text: '질문글에 달린 답변 중 마음에 드는 답변을 선택하는 과정을 보여주는 gif 이미지',
-      },
-      {
         url: '/img/02-3ideas/06_search.gif',
         title: '키워드로 질문글과 답변글 찾기',
         text: '원하는 키워드를 포함한 질문글과 답변글을 찾는 gif 이미지',

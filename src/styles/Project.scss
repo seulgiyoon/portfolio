@@ -78,7 +78,7 @@
     }
   }
 
-  @include media('<=phone') {
+  @include media('<=547px') {
     .slider {
       .slick-prev {
         left: 7px;

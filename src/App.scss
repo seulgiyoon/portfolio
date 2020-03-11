@@ -55,7 +55,7 @@
     padding-left: 20px;
   }
 
-  @include media('>phone', '<tablet') {
+  @include media('>547px', '<tablet') {
     .main-section {
       max-width: 90%;
       padding-left: 4%;
@@ -64,7 +64,7 @@
     }
   }
 
-  @include media('<=phone') {
+  @include media('<=547px') {
     font-size: 17px;
     h2 {
       font-size: 26px;
