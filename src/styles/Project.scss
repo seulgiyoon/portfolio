@@ -78,18 +78,7 @@
     }
   }
 
-  @include media('<=phone') {
-    .slider {
-      .slick-prev {
-        left: 7px;
-      }
-      .slick-next {
-        right: 7px;
-      }
-    }
-    .document-link {
-      font-size: 14px;
-    }
+  @include media('<670px') {
     #gif-list-title {
       display: none;
     }
@@ -101,6 +90,20 @@
     }
     .gif-titles-click {
       display: block;
+    }
+  }
+
+  @include media('<=547px') {
+    .slider {
+      .slick-prev {
+        left: 7px;
+      }
+      .slick-next {
+        right: 7px;
+      }
+    }
+    .document-link {
+      font-size: 14px;
     }
   }
 }
