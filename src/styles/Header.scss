@@ -34,6 +34,7 @@
   #show-cv {
     flex: 0 0 auto;
     font-size: 17px;
+    font-weight: 500;
   }
   @include media('<=phone') {
     height: 60px;

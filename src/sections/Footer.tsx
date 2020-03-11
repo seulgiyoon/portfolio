@@ -7,10 +7,8 @@ function Footer() {
     <section className="Footer">
       <Contact />
       <div id="copyright">
-        <h5>© 2020 Seulgi Yoon</h5>
-        <h5>Made with Reactjs, SCSS</h5>
-        <h5>
-          This site is using
+        <h6>© 2020 Seulgi Yoon</h6>
+        <h6>Built with Reactjs, Sass,
           <a
             href="https://spoqa.github.io/spoqa-han-sans/ko-KR/"
             target="_blank"
@@ -18,7 +16,7 @@ function Footer() {
           >
             Spoqa Han Sans KR
           </a>
-        </h5>
+        </h6>
       </div>
     </section>
   );

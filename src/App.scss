@@ -6,6 +6,10 @@
   font-size: 20px;
   line-height: 1.7em;
   width: 100%;
+  a:focus,
+  button:focus {
+    outline: 1px dashed $oc-green-5;
+  }
   h2 {
     font-size: 32px;
     line-height: 1.3em;
@@ -21,6 +25,11 @@
   h5 {
     font-size: 17px;
   }
+  h6 {
+    font-size: 15px;
+    color: $oc-gray-6;
+    line-height: 1.7em;
+  }
   a {
     color: $oc-gray-8;
     text-decoration: none;
@@ -29,11 +38,11 @@
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 200px;
+    margin-top: 190px;
     margin-bottom: 130px;
   }
   .divider {
-    background: $oc-gray-3;
+    background: $oc-gray-2;
     height: 2px;
     width: 200px;
     margin-bottom: 20px;
@@ -42,12 +51,8 @@
     font-size: 17px;
   }
   ul {
-    list-style-type: disc;
-    list-style-position: outside;
-    padding-left: 15px;
-  }
-  ul ::marker {
-    color: $oc-gray-3;
+    list-style: none;
+    padding-left: 20px;
   }
 
   @include media('>phone', '<tablet') {
@@ -56,9 +61,9 @@
       padding-left: 4%;
       padding-right: 4%;
       margin-top: 150px;
-      // background-color: red;
     }
   }
+
   @include media('<=phone') {
     font-size: 17px;
     h2 {
@@ -68,6 +73,9 @@
       font-size: 17px;
     }
     h5 {
+      font-size: 14px;
+    }
+    h6 {
       font-size: 14px;
     }
     .main-section {
