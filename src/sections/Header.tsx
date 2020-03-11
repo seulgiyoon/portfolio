@@ -5,7 +5,7 @@ function Header() {
   const scrollTop = () => {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
+  };
   return (
     <section className="Header">
       <nav>
@@ -16,7 +16,12 @@ function Header() {
             alt="윤슬기의 프로필 일러스트"
           />
         </button>
-        <a href="/img/윤슬기_이력서.pdf" id="show-cv" target="_blank">
+        <a
+          href="https://drive.google.com/file/d/10vW2lULVXcQXajK9N1i4tykCbFE0Y75G/view?usp=sharing"
+          id="show-cv"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           이력서 >
         </a>
       </nav>
