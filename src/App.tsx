@@ -1,9 +1,10 @@
 import React from 'react';
+import './App.scss';
 import { Header, Introduction, Projects, Footer } from './sections';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Header />
       <Introduction />
       <Projects />

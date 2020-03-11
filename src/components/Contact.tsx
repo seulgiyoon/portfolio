@@ -1,17 +1,25 @@
 import React from 'react';
 import { contacts } from '../data';
+import '../styles/Contact.scss';
 
 function Contact() {
   return (
-    <div>
-      {contacts.map((contact, index) => (
-        <div key={index}>
-          <h3>{contact.label}</h3>
-          <a href={contact.url} target={contact.isMail ? '' : '_blank' } rel="noopener noreferrer">
-            {contact.value}
-          </a>
-        </div>
-      ))}
+    <div className="Contact">
+      <div id="wrapper">
+        {contacts.map((contact, index) => (
+          <div key={index} className="contact-items">
+            <h3>{contact.label}</h3>
+            <a
+              className="contact-url"
+              href={contact.url}
+              target={contact.isMail ? '' : '_blank'}
+              rel="noopener noreferrer"
+            >
+              {contact.value}
+            </a>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

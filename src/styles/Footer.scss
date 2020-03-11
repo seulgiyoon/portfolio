@@ -1,0 +1,13 @@
+@import '~include-media/dist/include-media';
+@import '~open-color/open-color';
+
+.Footer {
+  margin-bottom: 30px;
+  #copyright {
+    text-align: center;
+    a {
+      margin-left: 5px;
+      color: #87b1f3;
+    }
+  }
+}

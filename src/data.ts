@@ -10,7 +10,8 @@ type Project = {
   position: string;
   stacks: string;
   works: string[];
-  imgs: string[];
+  imgs: { url: string; text: string }[];
+  gifs?: { url: string; title: string; text: string }[];
 };
 
 type Contact = {
@@ -25,7 +26,7 @@ const skills: Skill[] = [
   { label: 'Frontend Tools', items: 'React, React Native' },
   {
     label: 'Basic Knowledge',
-    items: 'TypeScript, SCSS, EXpressJS, MySQL, AWS S3/EC2/RDS',
+    items: 'TypeScript, Sass, EXpressJS, MySQL, AWS S3/EC2/RDS',
   },
 ];
 
@@ -42,14 +43,34 @@ const projects: Project[] = [
       '식물 정보 입력 시, DB에서 검색한 식물 정보를 입력란에 자동 반영하는 기능을 구현하여 사용자 편의성을 높임',
       '여러 컴포넌트에서 공통으로 사용하는 함수들을 파악하고, 그를 모듈화하여 코드 중복을 줄임',
       'API 요청을 한 곳에서 관리할 수 있도록 모듈화하여 관리 편의성을 높임',
-      '잠재 서비스 이용자를 대상으로 설문조사 실시(설문 보기), 이틀 간 약 250명의 의견을 모아서 보다 실용적인 방향으로 기획 개선',
+      '잠재 서비스 이용자를 대상으로 설문조사 실시, 이틀 간 약 250명의 의견을 모아서 보다 실용적인 방향으로 기획 개선',
       '입력과 수정 시에는 전체화면을 사용하고, 글 작성 후 바로 생성된 내용을 확인할 수 있도록 화면이 이동하는 등 유저 사용성을 고려한 User Flow 및 UI 디자인 설계, 구현',
     ],
     imgs: [
-      '/img/01-cholog/01-welcome.png',
-      '/img/01-cholog/02-plants.png',
-      '/img/01-cholog/03-plantInfo.png',
-      '/img/01-cholog/04-plantLog.png',
+      {
+        url: '/img/01-cholog/01-welcome.png',
+        text: '식물 관리 앱 초록의 로고화면',
+      },
+      {
+        url: '/img/01-cholog/02-plants.png',
+        text: '식물 목록을 볼 수 있는 식물 관리 앱 초록의 메인화면',
+      },
+      {
+        url: '/img/01-cholog/03-plantInfo.png',
+        text: '식물 정보를 볼 수 있는 식물 관리 앱 초록의 화면',
+      },
+      {
+        url: '/img/01-cholog/04-plantLog.png',
+        text: '식물 관리 앱 초록의 식물 관리 일지 화면',
+      },
+      {
+        url: '/img/01-cholog/05-logList01.png',
+        text: '식물 관리 앱 초록의 식물 관리 일지 달력 화면',
+      },
+      {
+        url: '/img/01-cholog/06-logList02.png',
+        text: '식물 관리 앱 초록의 식물 관리 일지 목록 화면',
+      },
     ],
   },
   {
@@ -65,7 +86,29 @@ const projects: Project[] = [
       '인증 유무와 현재 페이지에 따라 페이지 이동 흐름 및 화면에 나타날 컴포넌트를 다르게 설계하여 사용자 경험 향상',
       '키워드를 검색하면 검색된 내용에서 키워드가 포함된 문장을 일부 표시하고,  검색한 키워드를 강조하여 빠른 정보 확인이 가능하도록 함',
     ],
-    imgs: ['', ''],
+    imgs: [
+      {
+        url: '/img/02-3ideas/01-main.png',
+        text: '프로젝트 3 ideas 메인화면 스크린샷',
+      },
+    ],
+    gifs: [
+      {
+        url: '/img/02-3ideas/02_write_answer.gif',
+        title: '질문글에 답변 작성하기',
+        text: '질문글에 답변을 작성하는 과정을 보여주는 gif 이미지',
+      },
+      {
+        url: '/img/02-3ideas/04_select_answers.gif',
+        title: '마음에 드는 답변 선택하기',
+        text: '질문글에 달린 답변 중 마음에 드는 답변을 선택하는 과정을 보여주는 gif 이미지',
+      },
+      {
+        url: '/img/02-3ideas/06_search.gif',
+        title: '키워드로 질문글과 답변글 찾기',
+        text: '원하는 키워드를 포함한 질문글과 답변글을 찾는 gif 이미지',
+      },
+    ],
   },
 ];
 
@@ -79,7 +122,7 @@ const contacts: Contact[] = [
   { label: 'Blog', value: 'velog.io/@sgyoon', url: 'https://velog.io/@sgyoon' },
   {
     label: 'Github',
-    value: 'sgyoon.info@gmail.com',
+    value: 'github.com/seulgiyoon',
     url: 'https://github.com/seulgiyoon',
   },
 ];
