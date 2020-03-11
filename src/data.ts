@@ -92,7 +92,7 @@ const contacts: Contact[] = [
   { label: 'Blog', value: 'velog.io/@sgyoon', url: 'https://velog.io/@sgyoon' },
   {
     label: 'Github',
-    value: 'sgyoon.info@gmail.com',
+    value: 'github.com/seulgiyoon',
     url: 'https://github.com/seulgiyoon',
   },
 ];
