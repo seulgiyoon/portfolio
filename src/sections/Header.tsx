@@ -16,7 +16,7 @@ function Header() {
             alt="윤슬기의 프로필 일러스트"
           />
         </button>
-        <a href="/img/01-cholog/01-welcome.png" id="show-cv" target="_blank">
+        <a href="/img/윤슬기_이력서.pdf" id="show-cv" target="_blank">
           이력서 >
         </a>
       </nav>
