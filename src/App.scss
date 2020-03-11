@@ -1,0 +1,30 @@
+@import '~include-media/dist/include-media';
+@import '~open-color/open-color';
+
+.App {
+  color: $oc-gray-8;
+  font-size: 20px;
+  line-height: 1.7em;
+  h2 {
+    font-size: 32px;
+    line-height: 1.3em;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  a {
+    color: $oc-gray-8;
+    text-decoration: none;
+  }
+  // section {
+  //   margin: auto;
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+  @include media('<phone') {
+    font-size: 17px;
+    h2 {
+      font-size: 26px;
+    }
+  }
+}
