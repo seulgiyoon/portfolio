@@ -1,6 +1,7 @@
 * {
   font-family: 'Spoqa Han Sans', 'Source Sans Pro', Apple SD Gothic Neo,
     '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, Verdana, Arial, 'Sans-serif';
+  font-weight: 300;
   box-sizing: border-box;
   word-break: keep-all;
   margin: 0;
@@ -8,10 +9,9 @@
 
 h1,
 h2,
-h3,
-h4,
-p {
+h3 {
   margin: 0;
+  font-weight: 600;
 }
 
 .btn {

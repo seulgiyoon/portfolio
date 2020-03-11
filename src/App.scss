@@ -5,26 +5,80 @@
   color: $oc-gray-8;
   font-size: 20px;
   line-height: 1.7em;
+  width: 100%;
   h2 {
     font-size: 32px;
     line-height: 1.3em;
+    margin-bottom: 20px;
   }
   h3 {
     font-size: 20px;
+    margin-bottom: 12px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 17px;
   }
   a {
     color: $oc-gray-8;
     text-decoration: none;
   }
-  // section {
-  //   margin: auto;
-  //   display: flex;
-  //   flex-direction: column;
-  // }
-  @include media('<phone') {
+  .main-section {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 130px;
+  }
+  .divider {
+    background: $oc-gray-3;
+    height: 2px;
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  .skill-list p {
+    font-size: 17px;
+  }
+  ul {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 15px;
+  }
+  ul ::marker {
+    color: $oc-gray-3;
+  }
+
+  @include media('>phone', '<tablet') {
+    .main-section {
+      max-width: 90%;
+      padding-left: 4%;
+      padding-right: 4%;
+      margin-top: 150px;
+      // background-color: red;
+    }
+  }
+  @include media('<=phone') {
     font-size: 17px;
     h2 {
       font-size: 26px;
+    }
+    h4 {
+      font-size: 17px;
+    }
+    h5 {
+      font-size: 14px;
+    }
+    .main-section {
+      max-width: 90%;
+      margin-top: 100px;
+    }
+    .divider {
+      width: 150px;
+    }
+    .skill-list p {
+      font-size: 15px;
     }
   }
 }

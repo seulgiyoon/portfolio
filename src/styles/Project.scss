@@ -1,0 +1,99 @@
+@import '~include-media/dist/include-media';
+@import '~open-color/open-color';
+
+.Project {
+  .project-item {
+    margin-bottom: 80px;
+  }
+  .slider {
+    width: 100%;
+    margin-bottom: 30px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .slick-prev {
+      left: 12px;
+      z-index: 10;
+    }
+    .slick-next {
+      right: 12px;
+    }
+  }
+  .document-link {
+    display: block;
+    color: $oc-gray-6;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .positions {
+    padding-left: 18px;
+    margin-bottom: 18px;
+    border-left: 2px solid $oc-gray-3;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  #gif-list {
+    margin-top: 50px;
+  }
+  .gif {
+    border: 1px solid $oc-gray-3;
+  }
+  #gif-list-title {
+    margin-bottom: 10px;
+  }
+
+  .gif-title,
+  .gif-titles-click {
+    margin-bottom: 10px;
+  }
+  .gif-titles-click {
+    display: none;
+  }
+  .work {
+    margin-bottom: 10px;
+    line-height: 1.6em;
+  }
+
+  @include media('<tablet') {
+    .slider {
+      img {
+        width: 100%;
+        height: 530px;
+        object-fit: cover;
+      }
+    }
+    .gif-titles-click {
+      display: none;
+    }
+  }
+
+  @include media('<=phone') {
+    .slider {
+      .slick-prev {
+        left: 7px;
+      }
+      .slick-next {
+        right: 7px;
+      }
+    }
+    .document-link {
+      font-size: 14px;
+    }
+    #gif-list-title {
+      display: none;
+    }
+    .gif {
+      display: none;
+    }
+    .gif-title {
+      display: none;
+    }
+    .gif-titles-click {
+      display: block;
+    }
+  }
+}

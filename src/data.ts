@@ -11,6 +11,7 @@ type Project = {
   stacks: string;
   works: string[];
   imgs: string[];
+  gifs?: {url: string; title: string; text: string}[];
 };
 
 type Contact = {
@@ -65,7 +66,19 @@ const projects: Project[] = [
       '인증 유무와 현재 페이지에 따라 페이지 이동 흐름 및 화면에 나타날 컴포넌트를 다르게 설계하여 사용자 경험 향상',
       '키워드를 검색하면 검색된 내용에서 키워드가 포함된 문장을 일부 표시하고,  검색한 키워드를 강조하여 빠른 정보 확인이 가능하도록 함',
     ],
-    imgs: ['', ''],
+    imgs: ['/img/02-3ideas/01-main.png'],
+    gifs: [
+      {
+        url: '/img/02-3ideas/02_write_answer.gif',
+        title: '질문글에 답변 작성하기',
+        text: '질문글에 답변을 작성하는 과정을 보여주는 gif 이미지',
+      },
+      {
+        url: '/img/02-3ideas/06_search.gif',
+        title: '키워드가 포함된 질문글과 답변글 찾기',
+        text: '원하는 키워드를 포함한 질문글과 답변글을 찾는 gif 이미지',
+      },
+    ],
   },
 ];
 
