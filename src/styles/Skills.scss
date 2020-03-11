@@ -1,0 +1,20 @@
+@import '~include-media/dist/include-media';
+@import '~open-color/open-color';
+
+.Skills {
+  .skill-list {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2px;
+  }
+  .skill-label {
+    flex: 0 0 160px;
+    color: $oc-gray-6;
+  }
+  @include media('<=phone') {
+    .skill-list {
+      display: block;
+      margin-bottom: 9px;
+    }
+  }
+}
