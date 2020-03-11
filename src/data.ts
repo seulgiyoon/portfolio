@@ -10,8 +10,8 @@ type Project = {
   position: string;
   stacks: string;
   works: string[];
-  imgs: {url:string; text: string}[];
-  gifs?: {url: string; title: string; text: string}[];
+  imgs: { url: string; text: string }[];
+  gifs?: { url: string; title: string; text: string }[];
 };
 
 type Contact = {
@@ -47,10 +47,30 @@ const projects: Project[] = [
       '입력과 수정 시에는 전체화면을 사용하고, 글 작성 후 바로 생성된 내용을 확인할 수 있도록 화면이 이동하는 등 유저 사용성을 고려한 User Flow 및 UI 디자인 설계, 구현',
     ],
     imgs: [
-      {url: '/img/01-cholog/01-welcome.png', text: '식물 관리 앱 초록의 로고화면'},
-      {url: '/img/01-cholog/02-plants.png', text: '식물 목록을 볼 수 있는 식물 관리 앱 초록의 메인화면'},
-      {url: '/img/01-cholog/03-plantInfo.png', text: '식물 정보를 볼 수 있는 식물 관리 앱 초록의 화면'},
-      {url: '/img/01-cholog/04-plantLog.png', text: '식물 관리 앱 초록의 식물 관리 일지 화면'},
+      {
+        url: '/img/01-cholog/01-welcome.png',
+        text: '식물 관리 앱 초록의 로고화면',
+      },
+      {
+        url: '/img/01-cholog/02-plants.png',
+        text: '식물 목록을 볼 수 있는 식물 관리 앱 초록의 메인화면',
+      },
+      {
+        url: '/img/01-cholog/03-plantInfo.png',
+        text: '식물 정보를 볼 수 있는 식물 관리 앱 초록의 화면',
+      },
+      {
+        url: '/img/01-cholog/04-plantLog.png',
+        text: '식물 관리 앱 초록의 식물 관리 일지 화면',
+      },
+      {
+        url: '/img/01-cholog/05-logList01.png',
+        text: '식물 관리 앱 초록의 식물 관리 일지 달력 화면',
+      },
+      {
+        url: '/img/01-cholog/06-logList02.png',
+        text: '식물 관리 앱 초록의 식물 관리 일지 목록 화면',
+      },
     ],
   },
   {
@@ -66,12 +86,22 @@ const projects: Project[] = [
       '인증 유무와 현재 페이지에 따라 페이지 이동 흐름 및 화면에 나타날 컴포넌트를 다르게 설계하여 사용자 경험 향상',
       '키워드를 검색하면 검색된 내용에서 키워드가 포함된 문장을 일부 표시하고,  검색한 키워드를 강조하여 빠른 정보 확인이 가능하도록 함',
     ],
-    imgs: [{url: '/img/02-3ideas/01-main.png', text: '프로젝트 3 ideas 메인화면 스크린샷'}],
+    imgs: [
+      {
+        url: '/img/02-3ideas/01-main.png',
+        text: '프로젝트 3 ideas 메인화면 스크린샷',
+      },
+    ],
     gifs: [
       {
         url: '/img/02-3ideas/02_write_answer.gif',
         title: '질문글에 답변 작성하기',
         text: '질문글에 답변을 작성하는 과정을 보여주는 gif 이미지',
+      },
+      {
+        url: '/img/02-3ideas/04_select_answers.gif',
+        title: '마음에 드는 답변 선택하기',
+        text: '질문글에 달린 답변 중 마음에 드는 답변을 선택하는 과정을 보여주는 gif 이미지',
       },
       {
         url: '/img/02-3ideas/06_search.gif',

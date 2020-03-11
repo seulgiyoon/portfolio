@@ -8,7 +8,7 @@ function Footer() {
       <Contact />
       <div id="copyright">
         <h6>© 2020 Seulgi Yoon</h6>
-        <h6>Built with Reactjs, Sass,
+        <h6>Built with ReactJS, Sass,
           <a
             href="https://spoqa.github.io/spoqa-han-sans/ko-KR/"
             target="_blank"

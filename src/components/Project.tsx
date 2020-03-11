@@ -52,7 +52,7 @@ function Project() {
                 <div key={index}>
                   <h5 className="gif-title">{gif.title}</h5>
                   <div className="gif-titles-click">
-                    <a href={gif.url}>{gif.title} GIF ></a>
+                    <a href={gif.url}>'{gif.title}' GIF 보기></a>
                   </div>
                   <img src={gif.url} alt={gif.text} className="gif" />
                 </div>
