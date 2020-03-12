@@ -12,7 +12,7 @@
     }
   }
 
-  @include media('<=small') {
+  @include media('<=phone') {
     #copyright {
       #spoqa-han-sans-link {
         font-size: 14px;
