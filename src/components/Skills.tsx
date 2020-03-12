@@ -1,6 +1,5 @@
 import React from 'react';
 import { skills } from '../data';
-import '../styles/Skills.scss';
 
 function Skills() {
   return (

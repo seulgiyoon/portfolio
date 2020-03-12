@@ -1,6 +1,5 @@
 import React from 'react';
 import { Skills } from '../components';
-import '../styles/Introduction.scss';
 
 function Introduction() {
   return (

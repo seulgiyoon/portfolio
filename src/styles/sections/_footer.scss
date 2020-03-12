@@ -10,4 +10,12 @@
       color: #87b1f3;
     }
   }
+
+  @include media('<=small') {
+    #copyright {
+      a {
+        font-size: 14px;
+      }
+    }
+  }
 }

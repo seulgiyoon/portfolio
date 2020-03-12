@@ -25,6 +25,8 @@
   }
   #logo-wrapper {
     flex: 0 0 50px;
+    display: flex;
+    justify-content: center;
     cursor: pointer;
   }
   #logo {
@@ -36,7 +38,7 @@
     font-size: 17px;
     font-weight: 500;
   }
-  @include media('<=547px') {
+  @include media('<=small') {
     height: 60px;
     #logo {
       width: 45px;

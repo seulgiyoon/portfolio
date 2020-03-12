@@ -6,15 +6,22 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 2px;
+    p {
+      font-size: 17px;
+    }
   }
   .skill-label {
     flex: 0 0 160px;
     color: $oc-gray-6;
   }
-  @include media('<=547px') {
+
+  @include media('<=small') {
     .skill-list {
       display: block;
       margin-bottom: 9px;
+      p {
+        font-size: 15px;
+      }
     }
   }
 }
