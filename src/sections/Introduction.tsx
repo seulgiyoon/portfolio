@@ -4,7 +4,7 @@ import { Skills } from '../components';
 function Introduction() {
   return (
     <section className="main-section Introduction">
-      <div id="intro">
+      <div id="intro-description">
         <h2>안녕하세요. 윤슬기입니다.</h2>
         <h4>
           디자인과 프로그래밍 사이를 단단하게 잇는 프런트엔드 개발자를 목표로,

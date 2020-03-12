@@ -4,9 +4,9 @@ import { contacts } from '../data';
 function Contact() {
   return (
     <div className="Contact">
-      <div id="wrapper">
+      <div id="contact-wrapper">
         {contacts.map((contact, index) => (
-          <div key={index} className="contact-items">
+          <div key={index} className="contact-item">
             <h3>{contact.label}</h3>
             <a
               className="contact-url"
