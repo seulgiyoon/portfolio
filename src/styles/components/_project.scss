@@ -67,7 +67,7 @@
     margin-bottom: 60px;
   }
 
-  @include media('<tablet') {
+  @include media('<768px') {
     .slider {
       .slider-image {
         width: 100%;
@@ -92,7 +92,7 @@
     }
   }
 
-  @include media('<=phone') {
+  @include media('<=547px') {
     .slider {
       .slick-prev {
         left: 7px;

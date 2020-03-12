@@ -12,7 +12,7 @@
     color: $oc-gray-6;
   }
 
-  @include media('<=phone') {
+  @include media('<=547px') {
     .skill-list {
       display: block;
       margin-bottom: 9px;
