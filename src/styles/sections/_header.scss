@@ -39,7 +39,7 @@
     font-weight: 500;
   }
 
-  @include media('<=phone') {
+  @include media('<=547px') {
     height: 60px;
     #logo-image {
       width: 45px;
