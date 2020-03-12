@@ -67,7 +67,7 @@
     margin-bottom: 60px;
   }
 
-  @include media('<medium') {
+  @include media('<tablet') {
     .slider {
       .slider-image {
         width: 100%;
@@ -77,7 +77,7 @@
     }
   }
 
-  @include media('<small-medium') {
+  @include media('<670px') {
     #gif-list-title {
       display: none;
     }
@@ -92,7 +92,7 @@
     }
   }
 
-  @include media('<=small') {
+  @include media('<=phone') {
     .slider {
       .slick-prev {
         left: 7px;

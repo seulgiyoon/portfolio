@@ -28,7 +28,7 @@
     }
   }
 
-  @include media('<medium') {
+  @include media('<tablet') {
     display: block;
     height: 380px;
     padding-top: 60px;
@@ -50,7 +50,7 @@
     }
   }
 
-  @include media('<=small') {
+  @include media('<=phone') {
     padding-top: 60px;
   }
 }
