@@ -3,12 +3,12 @@
 
 .Project {
   .project-item {
-    margin-bottom: 120px;
+    margin-bottom: 180px;
   }
   .slider {
     width: 100%;
     margin-bottom: 35px;
-    img {
+    .slider-image {
       width: 100%;
       height: auto;
     }
@@ -20,80 +20,79 @@
       right: 12px;
     }
   }
-  .document-link {
+  .project-document-link {
     color: $oc-gray-6;
     font-size: 17px;
     font-weight: 500;
   }
-  .positions {
-    padding-left: 18px;
+  .position-and-stacks {
     margin-top: 20px;
     margin-bottom: 35px;
+    padding-left: 18px;
     border-left: 2px solid $oc-gray-3;
+    h5 {
+      margin-bottom: 4px;
+      line-height: 1.5em;
+    }
   }
-  .positions h5 {
-    margin-bottom: 4px;
-    line-height: 1.5em;
-  }
-  img {
-    width: 100%;
-    height: auto;
-  }
-  .project-single-image {
-    margin-bottom: 20px;
-  }
-  #gif-list {
-    margin-top: 50px;
-  }
-  .gif {
-    border: 1px solid $oc-gray-3;
-    margin-bottom: 50px;
-  }
-  #gif-list-title {
-    margin-top: 80px;
-    margin-bottom: 10px;
-  }
-  .gif-title,
-  .gif-titles-click {
-    margin-bottom: 10px;
-  }
-  .gif-titles-click {
-    display: none;
-  }
-  .work {
+  .contribute {
     margin-bottom: 15px;
     line-height: 1.6em;
   }
 
-  @include media('<tablet') {
+  .project-single-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  #gif-list {
+    margin-top: 100px;
+  }
+  #gif-list-title {
+    margin-top: 80px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .gif-title,
+  .gif-title-click {
+    margin-bottom: 10px;
+  }
+  .gif-title-click {
+    display: none;
+  }
+  .gif {
+    width: 100%;
+    height: auto;
+    border: 1px solid $oc-gray-3;
+    margin-bottom: 60px;
+  }
+
+  @include media('<medium') {
     .slider {
-      img {
+      .slider-image {
         width: 100%;
         height: 530px;
         object-fit: cover;
       }
     }
-    .gif-titles-click {
-      display: none;
-    }
   }
 
-  @include media('<670px') {
+  @include media('<small-medium') {
     #gif-list-title {
-      display: none;
-    }
-    .gif {
       display: none;
     }
     .gif-title {
       display: none;
     }
-    .gif-titles-click {
+    .gif-title-click {
       display: block;
+    }
+    .gif {
+      display: none;
     }
   }
 
-  @include media('<=547px') {
+  @include media('<=small') {
     .slider {
       .slick-prev {
         left: 7px;
@@ -102,7 +101,7 @@
         right: 7px;
       }
     }
-    .document-link {
+    .project-document-link {
       font-size: 14px;
     }
   }

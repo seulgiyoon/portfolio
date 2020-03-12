@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/Header.scss';
 
 function Header() {
   const scrollTop = () => {
@@ -11,14 +10,14 @@ function Header() {
       <nav>
         <button className="btn" id="logo-wrapper" onClick={scrollTop}>
           <img
-            id="logo"
+            id="logo-image"
             src="/img/Profile.jpg"
             alt="윤슬기의 프로필 일러스트"
           />
         </button>
         <a
           href="https://drive.google.com/file/d/1f48OHvRkZok9frxKSVM-WW_jMDTZEXJf/view?usp=sharing"
-          id="show-cv"
+          id="show-cv-link"
           target="_blank"
           rel="noopener noreferrer"
         >

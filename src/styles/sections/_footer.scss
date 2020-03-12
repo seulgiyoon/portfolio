@@ -5,9 +5,18 @@
   margin-bottom: 30px;
   #copyright {
     text-align: center;
-    a {
+    #spoqa-han-sans-link {
+      font-size: 15px;
       margin-left: 5px;
       color: #87b1f3;
+    }
+  }
+
+  @include media('<=small') {
+    #copyright {
+      #spoqa-han-sans-link {
+        font-size: 14px;
+      }
     }
   }
 }

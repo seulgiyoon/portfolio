@@ -1,0 +1,129 @@
+@import '~include-media/dist/include-media';
+@import '~open-color/open-color';
+
+* {
+  font-family: 'Spoqa Han Sans', 'Source Sans Pro', Apple SD Gothic Neo,
+    '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, Verdana, Arial, 'Sans-serif';
+  font-weight: 300;
+  box-sizing: border-box;
+  word-break: keep-all;
+  margin: 0;
+  color: $oc-gray-8;
+  font-size: 20px;
+  line-height: 1.7em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+a:focus,
+button:focus {
+  outline: 1px dashed $oc-green-5;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1.3em;
+  margin-bottom: 20px;
+  @include media('<=small') {
+    font-size: 26px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 17px;
+}
+
+h6 {
+  font-size: 15px;
+  color: $oc-gray-6;
+  line-height: 1.7em;
+}
+
+a {
+  color: $oc-gray-8;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.main-section {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 190px;
+  margin-bottom: 130px;
+}
+
+.btn {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.divider {
+  background: $oc-gray-2;
+  height: 2px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+@include media('>small', '<medium') {
+  .main-section {
+    max-width: 90%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 150px;
+  }
+}
+
+@include media('<=small') {
+  font-size: 17px;
+  h2 {
+    font-size: 26px;
+  }
+  h4 {
+    font-size: 17px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+  h6 {
+    font-size: 14px;
+  }
+  ul {
+    padding-left: 0;
+  }
+  .main-section {
+    max-width: 90%;
+    margin-top: 100px;
+  }
+  .divider {
+    width: 150px;
+  }
+}

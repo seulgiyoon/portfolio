@@ -1,7 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
 import { projects } from '../data';
-import '../styles/Project.scss';
 
 function Project() {
   const settings = {
@@ -19,7 +18,7 @@ function Project() {
             <Slider {...settings} className="slider">
               {project.imgs.map((img, index) => (
                 <div key={index}>
-                  <img src={img.url} alt={img.text} />
+                  <img src={img.url} alt={img.text} className="slider-image" />
                 </div>
               ))}
             </Slider>
@@ -29,20 +28,20 @@ function Project() {
           <h3>{project.title}</h3>
           <h4>{project.description}</h4>
           <a
-            className="document-link"
+            className="project-document-link"
             href={project.documentLink}
             target="_blank"
             rel="noopener noreferrer"
           >
             프로젝트 소개 문서 보기 >
           </a>
-          <div className="positions">
+          <div className="position-and-stacks">
             <h5>{project.position}</h5>
             <h5>{project.stacks} 사용</h5>
           </div>
-          <ul className="work-list">
+          <ul className="contribute-list">
             {project.works.map((work, index) => (
-              <li className="work" key={index}><h5>{work}</h5></li>
+              <li className="contribute" key={index}><h5>{work}</h5></li>
             ))}
           </ul>
           {project.gifs ? (
@@ -51,8 +50,8 @@ function Project() {
               {project.gifs.map((gif, index) => (
                 <div key={index}>
                   <h5 className="gif-title">{gif.title}</h5>
-                  <div className="gif-titles-click">
-                    <a href={gif.url}>'{gif.title}' GIF 보기></a>
+                  <div className="gif-title-click">
+                    <a href={gif.url}>'{gif.title}' GIF 보기 ></a>
                   </div>
                   <img src={gif.url} alt={gif.text} className="gif" />
                 </div>
