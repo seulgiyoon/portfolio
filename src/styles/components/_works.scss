@@ -1,0 +1,28 @@
+.Works {
+  margin-top: 55px;
+  // margin-bottom: 100px;
+  .contribute-list {
+    list-style: none;
+    padding-left: 12px;
+    margin-left: 5px;
+    margin-top: 18px;
+  }
+  .contribute {
+    margin-bottom: 15px;
+    line-height: 1.6em;
+    font-size: 17px;
+    &::before {
+      content: '•';
+      color: $oc-teal-6;
+      display: inline-block;
+      width: 1.3em;
+      margin-left: -1.3em;
+    }
+  }
+
+  @include media('<=547px') {
+    .contribute {
+      font-size: 15px;
+    }
+  }
+}

@@ -1,27 +1,4 @@
-type Skill = {
-  label: string;
-  items: string;
-};
-
-type Project = {
-  title: string;
-  description: string;
-  documentLink: string;
-  position: string;
-  stacks: string;
-  works: string[];
-  imgs: { url: string; text: string }[];
-  gifs?: { url: string; title: string; text: string }[];
-};
-
-type Contact = {
-  label: string;
-  value: string;
-  url: string;
-  isMail?: boolean;
-};
-
-const skills: Skill[] = [
+const skills = [
   { label: 'Languages', items: 'JavaScript, CSS, HTML' },
   { label: 'Frontend Tools', items: 'React, React Native' },
   {
@@ -30,14 +7,21 @@ const skills: Skill[] = [
   },
 ];
 
-const projects: Project[] = [
+const projects = [
   {
     title: '초록 ChoLog',
     description: '식물 관리 어플리케이션 (안드로이드 대응)',
-    documentLink:
-      'https://www.notion.so/2-009900-ChoLog-d50b43f1fce84d22abebf225b59bb726',
-    position: 'Front-end Developer, 팀장 담당',
-    stacks: 'React Native, React Navigation, React Native Paper',
+    link: {
+      title: '자세한 프로젝트 소개 문서 보기',
+      url:
+        'https://www.notion.so/2-009900-ChoLog-d50b43f1fce84d22abebf225b59bb726',
+    },
+    serviceDetail: `'반려 식물'이라는 단어가 등장할 만큼 식물을 키우는 사람들이 늘어난 시대. 보다 편리하고 간단하게 식물을 관리하고 정보를 기록할 수 있도록 기획하고 개발한 식물 관리 모바일 앱입니다.`,
+    projectInfo: {
+      date: '2020.02 - 현재',
+      position: 'Front-end Developer, 팀장 담당',
+      stacks: 'React Native, React Navigation, React Native Paper 사용',
+    },
     works: [
       '식물 정보, 식물 관리 일지, 식물 관리 항목 CRUD 인터페이스 구현',
       '식물 정보 입력 시, DB에서 검색한 식물 정보를 입력란에 자동 반영하는 기능을 구현하여 사용자 편의성을 높임',
@@ -76,10 +60,17 @@ const projects: Project[] = [
   {
     title: '3 Ideas',
     description: '질문과 답변이 이루어지는 소셜 Q&A 서비스 개발 프로젝트',
-    documentLink:
-      'https://www.notion.so/Project-3-ideas-df56c48e56604be7a1973a6ce49a5af2',
-    position: 'Front-end Developer, 팀장 담당',
-    stacks: 'React, React Router, Ant Design',
+    link: {
+      title: '자세한 프로젝트 소개 문서 보기',
+      url:
+        'https://www.notion.so/Project-3-ideas-df56c48e56604be7a1973a6ce49a5af2',
+    },
+    serviceDetail: `내 질문에 달린 답변들. 모두 마음에 들어서 한 가지 답변만 선택하기 어려울 때가 있습니다. 3 ideas에서는 다른 사람들이 추천하는 답변이 무엇인지 확인하고 좋은 답변을 세 개까지 선택할 수 있습니다.`,
+    projectInfo: {
+      date: '2020.01',
+      position: 'Front-end Developer, 팀장 담당',
+      stacks: 'React, React Router, Ant Design 사용',
+    },
     works: [
       '로그인, 질문글과 답글 CRUD 및 내용 검색 인터페이스 구현',
       'UI 라이브러리 Ant Design을 사용하여 제한된 시간 안에 적정 수준의 디자인을 구현함',
@@ -107,7 +98,27 @@ const projects: Project[] = [
   },
 ];
 
-const contacts: Contact[] = [
+const experiences = [
+  {
+    title: '까치당',
+    description:
+      '아름답고 실용적인 직물 제품과 자수 키트를 기획하고 만드는 브랜드',
+    link: {
+      title: '제품을 소개하는 홈페이지 둘러보기',
+      url: 'http://www.kkachidang.com',
+    },
+    projectInfo: {
+      date: '2015.05-2019.07',
+      position: '대표',
+      stacks: '브랜드 마케팅 및 제품 디자인, 생산과 판매',
+    },
+    extraText:
+      '4년여간 1인 브랜드를 꾸리며 브랜드와 제품을 만들고 다듬는 과정을 경험했습니다.',
+    imgs: null,
+  },
+];
+
+const contacts = [
   {
     label: 'Email',
     value: 'sgyoon.info@gmail.com',
@@ -122,4 +133,4 @@ const contacts: Contact[] = [
   },
 ];
 
-export { skills, projects, contacts };
+export { skills, projects, experiences, contacts };

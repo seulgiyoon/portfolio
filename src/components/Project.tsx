@@ -1,8 +1,15 @@
 import React from 'react';
 import Slider from 'react-slick';
-import { projects } from '../data';
+import { ProjectType } from '../dataTypes';
+import Gifs from './Gifs';
+import Works from './Works';
 
-function Project() {
+type ProjectProps = {
+  projects: ProjectType[];
+};
+
+function Project(props: ProjectProps) {
+  const { projects } = props;
   const settings = {
     dots: true,
     infinite: true,
@@ -12,9 +19,9 @@ function Project() {
 
   return (
     <div className="Project">
-      {projects.map((project, index) => (
+      {projects.map((project, index: number) => (
         <div key={index} className="project-item">
-          {project.imgs.length > 1 ? (
+          {project.imgs && project.imgs.length > 1 && (
             <Slider {...settings} className="slider">
               {project.imgs.map((img, index) => (
                 <div key={index}>
@@ -22,42 +29,38 @@ function Project() {
                 </div>
               ))}
             </Slider>
-          ) : (
-            <img src={project.imgs[0].url} alt={project.imgs[0].text} className="project-single-image"/>
+          )}
+          {project.imgs && project.imgs.length === 1 && (
+            <img
+              src={project.imgs[0].url}
+              alt={project.imgs[0].text}
+              className="project-single-image"
+            />
           )}
           <h3>{project.title}</h3>
           <h4>{project.description}</h4>
-          <a
-            className="project-document-link"
-            href={project.documentLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            프로젝트 소개 문서 보기 >
-          </a>
-          <div className="position-and-stacks">
-            <h5>{project.position}</h5>
-            <h5>{project.stacks} 사용</h5>
+          <div className="project-document-link">
+            <a
+              href={project.link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {project.link.title} >
+            </a>
           </div>
-          <ul className="contribute-list">
-            {project.works.map((work, index) => (
-              <li className="contribute" key={index}><h5>{work}</h5></li>
-            ))}
-          </ul>
-          {project.gifs ? (
-            <div id="gif-list">
-              <h4 id="gif-list-title">시연 GIF 이미지</h4>
-              {project.gifs.map((gif, index) => (
-                <div key={index}>
-                  <h5 className="gif-title">{gif.title}</h5>
-                  <div className="gif-title-click">
-                    <a href={gif.url}>'{gif.title}' GIF 보기 ></a>
-                  </div>
-                  <img src={gif.url} alt={gif.text} className="gif" />
-                </div>
-              ))}
+          {project.serviceDetail && (
+            <div className="project-service-detail">
+              <h5>{project.serviceDetail}</h5>
             </div>
-          ) : null}
+          )}
+          <div className="position-projectInfo">
+            <h5>{project.projectInfo.date}</h5>
+            <h5>{project.projectInfo.position}</h5>
+            <h5>{project.projectInfo.stacks}</h5>
+          </div>
+          {project.works && <Works works={project.works} />}
+          {project.gifs && <Gifs gifs={project.gifs} />}
+          {project.extraText && <h4 id="project-experience">{project.extraText}</h4>}
         </div>
       ))}
     </div>
