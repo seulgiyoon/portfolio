@@ -1,13 +1,12 @@
 import React from 'react';
 import { Project } from '../components';
+import { projects } from '../data';
 
 function Projects() {
   return (
     <section className="main-section">
-      <div>
-        <h2>Projects</h2>
-        <Project />
-      </div>
+      <h2>Projects</h2>
+      <Project projects={projects} />
     </section>
   );
 }

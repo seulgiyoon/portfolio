@@ -1,5 +1,11 @@
 import React from 'react';
-import { Header, Introduction, Projects, Footer } from './sections';
+import {
+  Header,
+  Introduction,
+  Projects,
+  Experiences,
+  Footer,
+} from './sections';
 
 function App() {
   return (
@@ -7,6 +13,7 @@ function App() {
       <Header />
       <Introduction />
       <Projects />
+      <Experiences />
       <Footer />
     </div>
   );

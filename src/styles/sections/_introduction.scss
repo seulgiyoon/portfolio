@@ -2,7 +2,16 @@
 @import '~open-color/open-color';
 
 .Introduction {
+  margin-top: 200px;
   #intro-description {
     margin-bottom: 40px;
+  }
+
+  @include media('>547px', '<768px') {
+    margin-top: 150px;
+  }
+
+  @include media('<=547px') {
+    margin-top: 100px;
   }
 }

@@ -1,0 +1,44 @@
+.Gifs {
+  .list-title {
+    font-weight: 500;
+    &.gif-list-title {
+      margin-top: 80px;
+    }
+  }
+  .gif-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    &.click {
+      display: none;
+    }
+  }
+  .gif {
+    width: 100%;
+    height: auto;
+    border: 1px solid $oc-gray-3;
+    margin-bottom: 10px;
+  }
+
+  @include media('<670px') {
+    .gif-list-title {
+      display: none;
+    }
+    .gif-title {
+      display: none;
+    }
+    .gif-title-wrapper {
+      margin-top: 40px;
+    }
+    .gif-title {
+      &.click {
+        display: inline-block;
+        margin: 0;
+        padding-bottom: 7px;
+        font-size: 17px;
+      }
+    }
+    .gif {
+      display: none;
+    }
+  }
+}

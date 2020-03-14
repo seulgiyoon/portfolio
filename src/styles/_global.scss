@@ -66,17 +66,11 @@ a {
   text-decoration: none;
 }
 
-ul {
-  list-style: none;
-  padding-left: 20px;
-}
-
 .main-section {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 190px;
-  margin-bottom: 130px;
+  margin-bottom: 200px;
 }
 
 .btn {
@@ -87,7 +81,7 @@ ul {
 }
 
 .divider {
-  background: $oc-gray-2;
+  background: $oc-teal-4;
   height: 2px;
   width: 200px;
   margin-bottom: 20px;
@@ -98,7 +92,7 @@ ul {
     max-width: 90%;
     padding-left: 4%;
     padding-right: 4%;
-    margin-top: 150px;
+    margin-bottom: 150px;
   }
 }
 
@@ -116,12 +110,9 @@ ul {
   h6 {
     font-size: 14px;
   }
-  ul {
-    padding-left: 0;
-  }
   .main-section {
     max-width: 90%;
-    margin-top: 100px;
+    margin-bottom: 120px;
   }
   .divider {
     width: 150px;
