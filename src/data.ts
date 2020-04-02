@@ -12,7 +12,7 @@ const projects = [
     title: '초록 ChoLog',
     description: '식물 관리 어플리케이션 (안드로이드 대응)',
     link: {
-      title: '자세한 프로젝트 소개 문서 보기',
+      title: `자세한 '초록' 프로젝트 소개 문서 보기`,
       url:
         'https://www.notion.so/2-009900-ChoLog-d50b43f1fce84d22abebf225b59bb726',
     },
@@ -61,7 +61,7 @@ const projects = [
     title: '3 Ideas',
     description: '질문과 답변이 이루어지는 소셜 Q&A 서비스 개발 프로젝트',
     link: {
-      title: '자세한 프로젝트 소개 문서 보기',
+      title: `자세한 '3 Ideas' 프로젝트 소개 문서 보기`,
       url:
         'https://www.notion.so/Project-3-ideas-df56c48e56604be7a1973a6ce49a5af2',
     },

@@ -21,7 +21,7 @@ function Header() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          이력서 >
+          이력서 보기 >
         </a>
       </nav>
     </section>
