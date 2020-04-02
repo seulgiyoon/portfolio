@@ -1,6 +1,3 @@
-@import '~include-media/dist/include-media';
-@import '~open-color/open-color';
-
 .Project {
   .project-item {
     margin-bottom: 150px;
@@ -26,25 +23,24 @@
   .project-document-link {
     margin-bottom: 20px;
     a {
-      color: $oc-teal-7;
+      color: $oc-teal-8;
       font-size: 17px;
-      font-weight: 500;
     }
   }
   .project-service-detail {
     background: $oc-gray-1;
     padding: 18px;
     margin-bottom: 28px;
-    h5 {
+    p {
       line-height: 1.8em;
     }
   }
   .position-projectInfo {
     margin-top: 20px;
     padding-left: 18px;
-    border-left: 2px solid $oc-teal-4;
-    h5 {
-      color: $oc-gray-6;
+    border-left: 2px solid $oc-teal-6;
+    p {
+      color: $light-gray;
       margin-bottom: 4px;
       line-height: 1.5em;
     }
@@ -61,7 +57,7 @@
     line-height: 1.8em;
   }
 
-  @include media('<768px') {
+  @include media('<large') {
     .slider {
       .slider-image {
         width: 100%;
@@ -71,7 +67,7 @@
     }
   }
 
-  @include media('<=547px') {
+  @include media('<=small') {
     .slider {
       .slick-prev {
         left: 7px;

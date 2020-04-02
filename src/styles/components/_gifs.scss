@@ -19,7 +19,7 @@
     margin-bottom: 10px;
   }
 
-  @include media('<670px') {
+  @include media('<medium') {
     .gif-list-title {
       display: none;
     }
@@ -34,7 +34,6 @@
         display: inline-block;
         margin: 0;
         padding-bottom: 7px;
-        // font-size: 17px;
       }
     }
     .gif {
@@ -42,7 +41,7 @@
     }
   }
 
-  @include media('<=547px') {
+  @include media('<=small') {
     .gif-title {
       &.click {
         font-size: 17px;

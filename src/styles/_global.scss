@@ -1,6 +1,3 @@
-@import '~include-media/dist/include-media';
-@import '~open-color/open-color';
-
 * {
   font-family: 'Spoqa Han Sans', 'Source Sans Pro', Apple SD Gothic Neo,
     '맑은 고딕', 'Malgun Gothic', '돋움', Dotum, Verdana, Arial, 'Sans-serif';
@@ -8,7 +5,7 @@
   box-sizing: border-box;
   word-break: keep-all;
   margin: 0;
-  color: $oc-gray-8;
+  color: $oc-gray-9;
   font-size: 20px;
   line-height: 1.7em;
 }
@@ -33,11 +30,12 @@ button:focus {
   outline: 1px dashed $oc-green-5;
 }
 
+h1,
 h2 {
   font-size: 32px;
   line-height: 1.3em;
   margin-bottom: 20px;
-  @include media('<=547px') {
+  @include media('<=small') {
     font-size: 26px;
   }
 }
@@ -47,23 +45,26 @@ h3 {
   margin-bottom: 12px;
 }
 
-h4 {
+h4,
+.description {
   font-size: 20px;
 }
 
-h5 {
+h5,
+.sub-information {
   font-size: 17px;
 }
 
-h6 {
+.credit-text {
   font-size: 15px;
-  color: $oc-gray-6;
+  color: $oc-gray-7;
   line-height: 1.7em;
 }
 
 a {
-  color: $oc-gray-8;
+  color: $oc-teal-8;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .main-section {
@@ -81,13 +82,13 @@ a {
 }
 
 .divider {
-  background: $oc-teal-4;
+  background: $oc-teal-6;
   height: 2px;
   width: 200px;
   margin-bottom: 20px;
 }
 
-@include media('>547px', '<768px') {
+@include media('>small', '<large') {
   .main-section {
     max-width: 90%;
     padding-left: 4%;
@@ -96,18 +97,20 @@ a {
   }
 }
 
-@include media('<=547px') {
+@include media('<=small') {
   font-size: 17px;
   h2 {
     font-size: 26px;
   }
-  h4 {
+  h4,
+  .description {
     font-size: 17px;
   }
-  h5 {
+  h5,
+  .sub-information {
     font-size: 15px;
   }
-  h6 {
+  .credit-text {
     font-size: 14px;
   }
   .main-section {

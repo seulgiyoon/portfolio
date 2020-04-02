@@ -12,16 +12,16 @@ function Header() {
           <img
             id="logo-image"
             src="/img/Profile.jpg"
-            alt="윤슬기의 프로필 일러스트"
+            alt="페이지 맨 위로 이동하기"
           />
         </button>
         <a
-          href="https://drive.google.com/file/d/1f48OHvRkZok9frxKSVM-WW_jMDTZEXJf/view?usp=sharing"
+          href="https://drive.google.com/file/d/1XrMRXHefB_jiwiMteyKwK5pr_d4S8pO4/view?usp=sharing"
           id="show-cv-link"
           target="_blank"
           rel="noopener noreferrer"
         >
-          이력서 >
+          이력서 보기 >
         </a>
       </nav>
     </section>

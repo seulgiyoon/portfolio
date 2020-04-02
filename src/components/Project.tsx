@@ -38,7 +38,7 @@ function Project(props: ProjectProps) {
             />
           )}
           <h3>{project.title}</h3>
-          <h4>{project.description}</h4>
+          <p className="description">{project.description}</p>
           <div className="project-document-link">
             <a
               href={project.link.url}
@@ -50,17 +50,17 @@ function Project(props: ProjectProps) {
           </div>
           {project.serviceDetail && (
             <div className="project-service-detail">
-              <h5>{project.serviceDetail}</h5>
+              <p className="sub-information">{project.serviceDetail}</p>
             </div>
           )}
           <div className="position-projectInfo">
-            <h5>{project.projectInfo.date}</h5>
-            <h5>{project.projectInfo.position}</h5>
-            <h5>{project.projectInfo.stacks}</h5>
+            <p className="sub-information">{project.projectInfo.date}</p>
+            <p className="sub-information">{project.projectInfo.position}</p>
+            <p className="sub-information">{project.projectInfo.stacks}</p>
           </div>
           {project.works && <Works works={project.works} />}
           {project.gifs && <Gifs gifs={project.gifs} />}
-          {project.extraText && <h4 id="project-experience">{project.extraText}</h4>}
+          {project.extraText && <p className="description" id="project-experience">{project.extraText}</p>}
         </div>
       ))}
     </div>
