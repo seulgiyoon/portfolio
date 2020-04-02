@@ -23,10 +23,6 @@
   @include media('<=small') {
     .contribute {
       font-size: 15px;
-      &::before {
-        width: 1em;
-        margin-left: -1em;
-      }
     }
   }
 }
