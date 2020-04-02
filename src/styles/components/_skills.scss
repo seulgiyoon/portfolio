@@ -1,21 +1,24 @@
-@import '~include-media/dist/include-media';
-@import '~open-color/open-color';
-
 .Skills {
   .skill-list {
     display: flex;
     flex-direction: row;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
   }
   .skill-label {
     flex: 0 0 160px;
-    color: $oc-gray-6;
+    color: $light-gray;
   }
 
-  @include media('<=547px') {
+  @include media('<=small') {
     .skill-list {
       display: block;
       margin-bottom: 9px;
+    }
+    .skill-label {
+      margin-bottom: 2px;
+    }
+    .skill-items {
+      margin-left: 10px;
     }
   }
 }

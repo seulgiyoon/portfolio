@@ -19,7 +19,7 @@
     margin-bottom: 10px;
   }
 
-  @include media('<670px') {
+  @include media('<medium') {
     .gif-list-title {
       display: none;
     }
@@ -42,7 +42,7 @@
     }
   }
 
-  @include media('<=547px') {
+  @include media('<=small') {
     .gif-title {
       &.click {
         font-size: 17px;
