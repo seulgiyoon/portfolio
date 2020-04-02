@@ -12,7 +12,7 @@ function Header() {
           <img
             id="logo-image"
             src="/img/Profile.jpg"
-            alt="윤슬기의 프로필 일러스트"
+            alt="페이지 맨 위로 이동하기"
           />
         </button>
         <a
