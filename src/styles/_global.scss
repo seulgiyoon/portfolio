@@ -8,7 +8,7 @@
   box-sizing: border-box;
   word-break: keep-all;
   margin: 0;
-  color: $oc-gray-8;
+  color: $oc-gray-9;
   font-size: 20px;
   line-height: 1.7em;
 }
@@ -60,13 +60,14 @@ h5,
 
 .credit-text {
   font-size: 15px;
-  color: $oc-gray-6;
+  color: $oc-gray-7;
   line-height: 1.7em;
 }
 
 a {
-  color: $oc-gray-8;
+  color: $oc-teal-7;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .main-section {
@@ -84,7 +85,7 @@ a {
 }
 
 .divider {
-  background: $oc-teal-4;
+  background: $oc-teal-5;
   height: 2px;
   width: 200px;
   margin-bottom: 20px;

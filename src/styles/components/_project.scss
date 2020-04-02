@@ -28,23 +28,22 @@
     a {
       color: $oc-teal-7;
       font-size: 17px;
-      font-weight: 500;
     }
   }
   .project-service-detail {
     background: $oc-gray-1;
     padding: 18px;
     margin-bottom: 28px;
-    h5 {
+    p {
       line-height: 1.8em;
     }
   }
   .position-projectInfo {
     margin-top: 20px;
     padding-left: 18px;
-    border-left: 2px solid $oc-teal-4;
-    h5 {
-      color: $oc-gray-6;
+    border-left: 2px solid $oc-teal-5;
+    p {
+      color: $oc-gray-7;
       margin-bottom: 4px;
       line-height: 1.5em;
     }

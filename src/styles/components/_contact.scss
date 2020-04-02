@@ -25,7 +25,10 @@
       margin-bottom: 2px;
     }
     a {
-      color: $oc-gray-6;
+      font-weight: 300;
+      padding-bottom: 2px;
+      border-bottom: 1px solid $oc-teal-6;
+      color: $oc-gray-7;
     }
   }
 
@@ -40,7 +43,7 @@
       }
     }
     #contact-list {
-      width: 200px;
+      width: 220px;
       flex-direction: column;
       justify-content: center;
     }
