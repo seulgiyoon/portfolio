@@ -1,7 +1,9 @@
+// @ts-nocheck
+
 import React from 'react';
 import Slider from 'react-slick';
 import { ProjectType } from '../dataTypes';
-import Gifs from './Gifs';
+import Videos from './Videos';
 import Works from './Works';
 
 type ProjectProps = {
@@ -12,6 +14,7 @@ function Project(props: ProjectProps) {
   const { projects } = props;
   const settings = {
     dots: true,
+    lazyLoad: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -59,7 +62,7 @@ function Project(props: ProjectProps) {
             <p className="sub-information">{project.projectInfo.stacks}</p>
           </div>
           {project.works && <Works works={project.works} />}
-          {project.gifs && <Gifs gifs={project.gifs} />}
+          {project.videos && <Videos videos={project.videos} />}
           {project.extraText && <p className="description" id="project-experience">{project.extraText}</p>}
         </div>
       ))}

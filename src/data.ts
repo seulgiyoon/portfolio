@@ -83,16 +83,16 @@ const projects = [
         text: '프로젝트 3 ideas 메인화면 스크린샷',
       },
     ],
-    gifs: [
+    videos: [
       {
-        url: '/img/02-3ideas/02_write_answer.gif',
+        url: '/img/02-3ideas/02_write_answer.mp4',
         title: '질문글에 답변 작성하기',
-        text: '질문글에 답변을 작성하는 과정을 보여주는 gif 이미지',
+        text: '질문글에 답변을 작성하는 과정을 보여주는 영상',
       },
       {
-        url: '/img/02-3ideas/06_search.gif',
+        url: '/img/02-3ideas/06_search.mp4',
         title: '키워드로 질문글과 답변글 찾기',
-        text: '원하는 키워드를 포함한 질문글과 답변글을 찾는 gif 이미지',
+        text: '원하는 키워드를 포함한 질문글과 답변글을 찾는 영상',
       },
     ],
   },
