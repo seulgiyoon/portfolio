@@ -11,7 +11,7 @@ type ProjectType = {
   projectInfo: { date: string; position: string; stacks: string };
   works?: string[];
   imgs: { url: string; text: string }[] | null;
-  gifs?: { url: string; title: string; text: string }[];
+  videos?: { url: string; title: string; text: string }[];
   extraText?: string;
 };
 
