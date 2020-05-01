@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import React from 'react';
 import Slider from 'react-slick';
 import { ProjectType } from '../dataTypes';
@@ -12,6 +14,7 @@ function Project(props: ProjectProps) {
   const { projects } = props;
   const settings = {
     dots: true,
+    lazyLoad: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
