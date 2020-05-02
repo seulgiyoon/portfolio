@@ -20,9 +20,9 @@ function Videos(props: VideosProps) {
               <source src={video.url} type="video/mp4" />
               시연 영상 보기가 지원되지 않는 브라우저입니다.
             </video>
-            <a href={video.url} className="video-title click">
+            {/* <a href={video.url} className="video-title click">
               '{video.title}' 영상 보기 >
-            </a>
+            </a> */}
           </div>
         ))}
         </div>
