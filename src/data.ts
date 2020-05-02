@@ -32,27 +32,27 @@ const projects = [
     ],
     imgs: [
       {
-        url: '/img/01-cholog/01-welcome.png',
+        url: '/img/01-cholog/01-welcome.jpg',
         text: '식물 관리 앱 초록의 로고화면',
       },
       {
-        url: '/img/01-cholog/02-plants.png',
+        url: '/img/01-cholog/02-plants.jpg',
         text: '식물 목록을 볼 수 있는 식물 관리 앱 초록의 메인화면',
       },
       {
-        url: '/img/01-cholog/03-plantInfo.png',
+        url: '/img/01-cholog/03-plantInfo.jpg',
         text: '식물 정보를 볼 수 있는 식물 관리 앱 초록의 화면',
       },
       {
-        url: '/img/01-cholog/04-plantLog.png',
+        url: '/img/01-cholog/04-plantLog.jpg',
         text: '식물 관리 앱 초록의 식물 관리 일지 화면',
       },
       {
-        url: '/img/01-cholog/05-logList01.png',
+        url: '/img/01-cholog/05-logList01.jpg',
         text: '식물 관리 앱 초록의 식물 관리 일지 달력 화면',
       },
       {
-        url: '/img/01-cholog/06-logList02.png',
+        url: '/img/01-cholog/06-logList02.jpg',
         text: '식물 관리 앱 초록의 식물 관리 일지 목록 화면',
       },
     ],
@@ -79,7 +79,7 @@ const projects = [
     ],
     imgs: [
       {
-        url: '/img/02-3ideas/01-main.png',
+        url: '/img/02-3ideas/01-main.jpg',
         text: '프로젝트 3 ideas 메인화면 스크린샷',
       },
     ],
