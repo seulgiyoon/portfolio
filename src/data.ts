@@ -86,11 +86,13 @@ const projects = [
     videos: [
       {
         url: '/img/02-3ideas/02_write_answer.mp4',
+        coverImg: '/img/02-3ideas/02_write_answer_cover.jpg',
         title: '질문글에 답변 작성하기',
         text: '질문글에 답변을 작성하는 과정을 보여주는 영상',
       },
       {
         url: '/img/02-3ideas/06_search.mp4',
+        coverImg: '/img/02-3ideas/06_search_cover.jpg',
         title: '키워드로 질문글과 답변글 찾기',
         text: '원하는 키워드를 포함한 질문글과 답변글을 찾는 영상',
       },
