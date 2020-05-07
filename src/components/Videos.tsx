@@ -1,7 +1,7 @@
 import React from 'react';
 
 type VideosProps = {
-  videos: { url: string; title: string; text: string }[];
+  videos: { url: string; coverImg: string; title: string; text: string }[];
 };
 
 function Videos(props: VideosProps) {
@@ -16,7 +16,7 @@ function Videos(props: VideosProps) {
         {videos.map((video, index) => (
           <div key={index}>
             <h5 className="video-title">{video.title}</h5>
-            <video className="video" preload="metadata" controls>
+            <video className="video" preload="metadata" poster={video.coverImg}controls>
               <source src={video.url} type="video/mp4" />
               시연 영상 보기가 지원되지 않는 브라우저입니다.
             </video>

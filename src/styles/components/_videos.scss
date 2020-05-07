@@ -19,33 +19,33 @@
     margin-bottom: 10px;
   }
 
-  @include media('<medium') {
-    .video-list-title {
-      display: none;
-    }
-    .video-title {
-      display: none;
-    }
-    .video-title-wrapper {
-      margin-top: 40px;
-    }
-    .video-title {
-      &.click {
-        display: inline-block;
-        margin: 0;
-        padding-bottom: 7px;
-      }
-    }
-    .video {
-      display: none;
-    }
-  }
+  // @include media('<medium') {
+  //   .video-list-title {
+  //     display: none;
+  //   }
+  //   .video-title {
+  //     display: none;
+  //   }
+  //   .video-title-wrapper {
+  //     margin-top: 40px;
+  //   }
+  //   .video-title {
+  //     &.click {
+  //       display: inline-block;
+  //       margin: 0;
+  //       padding-bottom: 7px;
+  //     }
+  //   }
+  //   .video {
+  //     display: none;
+  //   }
+  // }
 
-  @include media('<=small') {
-    .video-title {
-      &.click {
-        font-size: 17px;
-      }
-    }
-  }
+  // @include media('<=small') {
+  //   .video-title {
+  //     &.click {
+  //       font-size: 17px;
+  //     }
+  //   }
+  // }
 }
