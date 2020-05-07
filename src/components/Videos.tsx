@@ -16,7 +16,7 @@ function Videos(props: VideosProps) {
         {videos.map((video, index) => (
           <div key={index}>
             <h5 className="video-title">{video.title}</h5>
-            <video className="video" preload="metadata" poster={video.coverImg}controls>
+            <video controls playsinline muted className="video" preload="metadata" poster={video.coverImg}>
               <source src={video.url} type="video/mp4" />
               시연 영상 보기가 지원되지 않는 브라우저입니다.
             </video>
