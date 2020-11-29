@@ -2,21 +2,21 @@ import React from 'react';
 import {
   Header,
   Introduction,
-  Projects,
-  Experiences,
+  WorkExperiences,
+  PersonalProjects,
   Footer,
 } from './sections';
 
 function App() {
   return (
     <div className="App">
-      <Header />
       <main>
+        <Header />
         <Introduction />
-        <Projects />
-        <Experiences />
+        <WorkExperiences />
+        <PersonalProjects />
+        <Footer />
       </main>
-      <Footer />
     </div>
   );
 }

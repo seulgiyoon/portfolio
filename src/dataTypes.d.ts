@@ -8,11 +8,10 @@ type ProjectType = {
   description: string;
   link: { title: string; url: string };
   serviceDetail?: string;
-  projectInfo: { date: string; position: string; stacks: string };
-  works?: string[];
-  imgs: { url: string; text: string }[] | null;
-  videos?: { url: string; coverImg: string; title: string; text: string; }[];
-  extraText?: string;
+  projectInfo: { date: string; position: string; stacks?: string };
+  works: { simpleStyle: boolean; workList: string[] };
+  imgs?: { url: string; text: string }[] | null;
+  videos?: { url: string; coverImg: string; title: string; text: string }[];
 };
 
 type ContactType = {

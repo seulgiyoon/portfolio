@@ -3,8 +3,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import { ProjectType } from '../dataTypes';
-import Videos from './Videos';
-import Works from './Works';
+import { Videos, WorkList } from '../components';
 
 type ProjectProps = {
   projects: ProjectType[];
@@ -48,7 +47,7 @@ function Project(props: ProjectProps) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {project.link.title} >
+              {project.link.title} {'>'}
             </a>
           </div>
           {project.serviceDetail && (
@@ -61,9 +60,13 @@ function Project(props: ProjectProps) {
             <p className="sub-information">{project.projectInfo.position}</p>
             <p className="sub-information">{project.projectInfo.stacks}</p>
           </div>
-          {project.works && <Works works={project.works} />}
+          <WorkList works={project.works} />
           {project.videos && <Videos videos={project.videos} />}
-          {project.extraText && <p className="description" id="project-experience">{project.extraText}</p>}
+          {project.extraText && (
+            <p className="description" id="project-experience">
+              {project.extraText}
+            </p>
+          )}
         </div>
       ))}
     </div>
