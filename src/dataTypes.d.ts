@@ -3,13 +3,25 @@ type SkillType = {
   items: string;
 };
 
+type ListType = {
+  title: string;
+  percent: number;
+  details: string[];
+  stacks: string;
+};
+
+type WorkListType = {
+  simpleStyle: boolean;
+  workList: string[] | ListType[];
+};
+
 type ProjectType = {
   title: string;
   description: string;
   link: { title: string; url: string };
   serviceDetail?: string;
   projectInfo: { date: string; position: string; stacks?: string };
-  works: { simpleStyle: boolean; workList: string[] };
+  works: WorkList;
   imgs?: { url: string; text: string }[] | null;
   videos?: { url: string; coverImg: string; title: string; text: string }[];
 };
@@ -21,4 +33,4 @@ type ContactType = {
   isMail?: boolean;
 };
 
-export { SkillType, ProjectType, ContactType };
+export { SkillType, ListType, WorkListType, ProjectType, ContactType };

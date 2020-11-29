@@ -23,7 +23,23 @@ const works = [
     },
     works: {
       simpleStyle: false,
-      workList: [],
+      workList: [
+        {
+          title: `반려동물 제품 정기배송 서비스 'FitpetGo' 개발(릴리즈 준비중)`,
+          percent: 30,
+          details: [
+            `Atomic 디자인에 기반하여 재사용성을 고려한 컴포넌트 작성`,
+            `localStorage를 활용, 사용자의 설문 응답 결과를 브라우저에 저장하여 설문 도중에 이탈 후 재진입 시 이탈한 곳에서 설문을 시작할 수 있도록 구성`,
+          ],
+          stacks: 'React, TypeScript, Redux, Redux thunk, styled-components',
+        },
+        {
+          title: `반려동물 제품 쇼핑몰 'FitpetMall' 리뉴얼 디자인 퍼블리싱(릴리즈 준비중)`,
+          percent: 50,
+          details: [`디자인과 일치하고 기능을 구현하기 용이하도록 퍼블리싱`],
+          stacks: 'HTML, CSS',
+        },
+      ],
     },
   },
   {
