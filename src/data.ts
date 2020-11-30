@@ -39,6 +39,33 @@ const works = [
           details: [`디자인과 일치하고 기능을 구현하기 용이하도록 퍼블리싱`],
           stacks: 'HTML, CSS',
         },
+        {
+          title: `동물병원 정보 검색 서비스 '병원찾기' 웹사이트 개선`,
+          percent: 30,
+          details: [
+            `미들웨어를 활용하여 API 요청에 대한 에러 처리 개편`,
+            `웹뷰와 모바일 브라우저에 모두 대응하는 새로운 웹페이지 추가`,
+          ],
+          stacks: 'React, TypeScript, Redux, Redux-saga, styled-components',
+        },
+        {
+          title: `반려동물 건강 검사 키트 'Ahead'용 Admin 웹사이트 개선`,
+          percent: 80,
+          details: [
+            `반려동물과 반려인 간 정보 검색 연동 등 편의성을 높이는 새로운 기능 추가`,
+            `검사결과 확인 창 UI 개편`,
+          ],
+          stacks: 'React, styled-components',
+        },
+        {
+          title: `서비스 통합 플랫폼 Fitpet 어플리케이션 내 '진료수첩' 웹페이지 개발`,
+          percent: 90,
+          details: [
+            `반려동물의 병원 영수증 기록을 확인하는 '진료수첩' 웹페이지 작성`,
+            `네이티브 어플리케이션과 웹뷰의 관계를 이해하고 필요한 함수 구현`,
+          ],
+          stacks: 'React, styled-components',
+        },
       ],
     },
   },
