@@ -1,10 +1,10 @@
 .Footer {
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   #copyright {
     text-align: center;
     #spoqa-han-sans-link {
-      font-size: 15px;
-      margin-left: 5px;
+      font-size: 0.938rem;
+      margin-left: 0.313rem;
       color: $oc-teal-8;
     }
   }
@@ -12,7 +12,7 @@
   @include media('<=small') {
     #copyright {
       #spoqa-han-sans-link {
-        font-size: 14px;
+        font-size: 0.875rem;
       }
     }
   }

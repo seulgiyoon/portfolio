@@ -1,13 +1,13 @@
 .Project {
   .project-item {
-    margin-bottom: 150px;
+    margin-bottom: 9.375rem;
   }
   .slider {
     width: 100%;
-    margin-bottom: 45px;
+    margin-bottom: 2.813rem;
     .slick-list {
       background-color: #7ed4a5;
-      height: 525px;
+      height: 32.813rem;
     }
     .slider-image {
       width: 100%;
@@ -16,41 +16,41 @@
       object-fit: cover;
     }
     .slick-prev {
-      left: 12px;
+      left: 0.75rem;
       z-index: 10;
     }
     .slick-next {
-      right: 12px;
+      right: 0.75rem;
     }
     .slick-dots {
-      bottom: -30px;
+      bottom: -1.875rem;
     }
   }
   .list-title {
     font-weight: 500;
   }
   .project-document-link {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     a {
       color: $oc-teal-8;
-      font-size: 17px;
+      font-size: 1.063rem;
     }
   }
   .project-service-detail {
     background: $oc-gray-1;
-    padding: 18px;
-    margin-bottom: 28px;
+    padding: 1.125rem;
+    margin-bottom: 1.75rem;
     p {
       line-height: 1.8em;
     }
   }
   .position-projectInfo {
-    margin-top: 20px;
-    padding-left: 18px;
+    margin-top: 1.25rem;
+    padding-left: 1.125rem;
     border-left: 2px solid $oc-teal-6;
     p {
       color: $light-gray;
-      margin-bottom: 4px;
+      margin-bottom: 0.25rem;
       line-height: 1.5em;
     }
   }
@@ -58,11 +58,11 @@
   .project-single-image {
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 
   #project-experience {
-    margin-top: 30px;
+    margin-top: 1.875rem;
     line-height: 1.8em;
   }
 
@@ -72,21 +72,24 @@
         width: 100%;
         height: 525px;
       }
+      .slick-list {
+        height: 525px;
+      }
     }
   }
 
   @include media('<=small') {
     .slider {
       .slick-prev {
-        left: 7px;
+        left: 0.438rem;
       }
       .slick-next {
-        right: 7px;
+        right: 0.438rem;
       }
     }
     .project-document-link {
       a {
-        font-size: 15px;
+        font-size: 0.938rem;
       }
     }
   }

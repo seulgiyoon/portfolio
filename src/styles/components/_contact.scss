@@ -1,17 +1,17 @@
 .Contact {
   width: 100%;
-  height: 330px;
-  margin-bottom: 30px;
+  height: 20.625rem;
+  margin-bottom: 1.875rem;
   background: $oc-gray-0;
-  padding-top: 90px;
+  padding-top: 5.625rem;
   #contact-wrapper {
     margin: 0 auto;
     display: flex;
-    max-width: 700px;
+    max-width: 43.75rem;
     flex-direction: column;
   }
   #contact-list {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -19,19 +19,19 @@
   .contact-item {
     h3 {
       color: $oc-gray-7;
-      margin-bottom: 2px;
+      margin-bottom: 0.125rem;
     }
     a {
       font-weight: 300;
-      padding-bottom: 2px;
+      padding-bottom: 0.125rem;
       border-bottom: 1px solid $oc-teal-6;
       color: $oc-gray-7;
     }
   }
 
   @include media('<large') {
-    height: 400px;
-    padding-top: 60px;
+    height: 25rem;
+    padding-top: 3.75rem;
     #contact-wrapper {
       flex-direction: column;
       align-items: center;
@@ -40,22 +40,22 @@
       }
     }
     #contact-list {
-      width: 220px;
+      width: 13.75rem;
       flex-direction: column;
       justify-content: center;
     }
     .contact-item {
-      margin-bottom: 23px;
+      margin-bottom: 1.438rem;
       h3 {
         margin-bottom: 0;
       }
       .contact-url {
-        font-size: 17px;
+        font-size: 1.063rem;
       }
     }
   }
 
   @include media('<=small') {
-    padding-top: 60px;
+    padding-top: 3.75rem;
   }
 }

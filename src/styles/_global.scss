@@ -6,7 +6,6 @@
   word-break: keep-all;
   margin: 0;
   color: $oc-gray-9;
-  font-size: 20px;
   line-height: 1.7em;
 }
 
@@ -32,31 +31,31 @@ button:focus {
 
 h1,
 h2 {
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 1.3em;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   @include media('<=small') {
-    font-size: 26px;
+    font-size: 1.625rem;
   }
 }
 
 h3 {
-  font-size: 20px;
-  margin-bottom: 12px;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
 }
 
 h4,
 .description {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 h5,
 .sub-information {
-  font-size: 17px;
+  font-size: 1.063rem;
 }
 
 .credit-text {
-  font-size: 15px;
+  font-size: 0.938rem;
   color: $oc-gray-7;
   line-height: 1.7em;
 }
@@ -68,10 +67,10 @@ a {
 }
 
 .main-section {
-  max-width: 700px;
+  max-width: 43.75rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 200px;
+  margin-bottom: 12.5rem;
 }
 
 .btn {
@@ -84,8 +83,8 @@ a {
 .divider {
   background: $oc-teal-6;
   height: 2px;
-  width: 200px;
-  margin-bottom: 20px;
+  width: 12.5rem;
+  margin-bottom: 1.25rem;
 }
 
 @include media('>small', '<large') {
@@ -93,31 +92,31 @@ a {
     max-width: 90%;
     padding-left: 4%;
     padding-right: 4%;
-    margin-bottom: 150px;
+    margin-bottom: 9.375rem;
   }
 }
 
 @include media('<=small') {
-  font-size: 17px;
+  font-size: 1.063rem;
   h2 {
-    font-size: 26px;
+    font-size: 1.625rem;
   }
   h4,
   .description {
-    font-size: 17px;
+    font-size: 1.063rem;
   }
   h5,
   .sub-information {
-    font-size: 15px;
+    font-size: 0.938rem;
   }
   .credit-text {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .main-section {
     max-width: 90%;
-    margin-bottom: 120px;
+    margin-bottom: 7.5rem;
   }
   .divider {
-    width: 150px;
+    width: 9.375rem;
   }
 }
